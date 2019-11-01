@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/gbs2", { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/GoogleBooksSearch", { useNewUrlParser: true })
 .catch(err => console.log(err));
 
 // // Define any API routes before this runs
